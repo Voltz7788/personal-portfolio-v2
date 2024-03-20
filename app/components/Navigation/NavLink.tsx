@@ -18,7 +18,8 @@ export default function NavLink({
       <div
         className={`grid place-content-center h-24  transition-all 
       duration-100 border-r-2 border-background  font-extralight 
-       text-copy-light text-lg ${
+       text-copy-light text-lg hover:text-copy hover:border-primary 
+       hover:bg-foreground ${
          selected ? "text-copy border-primary bg-foreground" : ""
        }`}
       >

@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import NavLink from "./NavLink";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import useNavScrollCheck from "@/app/hooks/useNavScrollCheck";
+import ToggleSwitch from "../Animation/ToggleSwitch";
 
 const navLinks: { title: string; href: string }[] = [
   { title: "About", href: "#about" },
@@ -25,7 +26,7 @@ export default function Navbar() {
       <div className="flex flex-col">
         <Link
           href={"#hero"}
-          className="h-20 grid place-content-center border-r-2 border-background text-white"
+          className="h-20 grid place-content-center border-r-2 border-background text-copy"
         >
           L
         </Link>
@@ -38,7 +39,7 @@ export default function Navbar() {
             selected={selected === link.href ? true : false}
           />
         ))}
-        <div className="h-screen border-r-2 border-background" />
+        <ToggleSwitch />
       </div>
     </motion.nav>
   );
