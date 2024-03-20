@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth scroll-p-28">
-      <body className={`default-dark h-screen ${poppins.className}`}>
+      <body
+        className={`default-dark h-screen bg-foreground ${poppins.className}`}
+      >
         <Navbar />
         <TopLinks />
         {children}
