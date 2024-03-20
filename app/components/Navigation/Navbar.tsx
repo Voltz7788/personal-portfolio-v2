@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import NavLink from "./NavLink";
 import { motion } from "framer-motion";
+import Magnetic from "../Animation/Magnetic";
 
 const navLinks: { title: string; href: string }[] = [
   { title: "About", href: "#about" },
