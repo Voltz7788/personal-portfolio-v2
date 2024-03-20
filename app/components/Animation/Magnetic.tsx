@@ -1,10 +1,12 @@
 import React, { ReactNode, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 export default function Magnetic({ children }: { children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const glowControls = useAnimation();
 
   const mouseMove = (e: { clientX: number; clientY: number }) => {
     const { clientX, clientY } = e;
@@ -32,3 +34,9 @@ export default function Magnetic({ children }: { children: ReactNode }) {
     </motion.div>
   );
 }
+
+// const variants = {
+//   glow: {
+//     box,
+//   },
+// };

@@ -18,8 +18,8 @@ export default function SocialLinks() {
     <div className="flex justify-between w-44">
       {socialLinks.map((link, index) => (
         <motion.div
-          initial={{ y: "-500%" }}
-          animate={{ y: "0%" }}
+          initial={{ y: "-300%", opacity: 0 }}
+          animate={{ y: "0%", opacity: 1 }}
           transition={{ delay: 0.1 * index }}
           key={index}
         >
