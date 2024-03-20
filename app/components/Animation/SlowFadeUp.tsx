@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { ReactNode } from "react";
-import { FadeUpProps } from "./FadeUp";
+import type { FadeUpProps } from "./FadeUp";
 
 export default function SlowFadeUp({ index = 1, children }: FadeUpProps) {
   const ref = useRef(null);
