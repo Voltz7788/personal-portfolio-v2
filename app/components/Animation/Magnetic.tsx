@@ -34,9 +34,3 @@ export default function Magnetic({ children }: { children: ReactNode }) {
     </motion.div>
   );
 }
-
-// const variants = {
-//   glow: {
-//     box,
-//   },
-// };

@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth scroll-p-28">
       <body className={`default-dark h-screen ${poppins.className}`}>
         <Navbar />
         <TopLinks />
