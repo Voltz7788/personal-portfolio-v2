@@ -9,9 +9,9 @@ export default function Navbar() {
       <div className="flex flex-col">
         <Link
           href={"/"}
-          className="h-20 grid place-content-center border-r-2 border-background"
+          className="h-20 grid place-content-center border-r-2 border-background text-white"
         >
-          Logo
+          L
         </Link>
         <NavLink href={"#about"} title="About" />
         <NavLink href={"#projects"} title="Projects" />

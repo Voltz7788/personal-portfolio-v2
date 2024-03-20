@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navigation/Navbar";
+import TopLinks from "./components/Navigation/TopLinks";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`default-dark h-screen ${poppins.className}`}>
         <Navbar />
+        <TopLinks />
         {children}
       </body>
     </html>
