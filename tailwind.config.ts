@@ -30,7 +30,7 @@ const config: Config = {
 
         copy: "hsla(var(--copy))",
         "copy-light": "hsla(var(--copy-light))",
-        "copy-lighter": "hsla(var(--copy-dark))",
+        "copy-lighter": "hsla(var(--copy-lighter))",
 
         success: "hsla(var(--success))",
         warning: "hsla(var(--warning))",
