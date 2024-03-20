@@ -28,7 +28,7 @@ export default function Hero() {
       <Reveal>
         <Link href={"#contact"}>
           <div
-            className={`bg-secondary px-4 py-2.5 w-full rounded text-xl mt-7 ${inter.className}`}
+            className={`bg-secondary text-copy px-4 py-2.5 w-full rounded text-xl mt-7 ${inter.className}`}
           >
             Contact me
           </div>

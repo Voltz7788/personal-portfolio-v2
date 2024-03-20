@@ -4,7 +4,7 @@ import SocialLinks from "../Navigation/SocialLinks";
 import { FaArrowRight } from "react-icons/fa";
 import { IoTerminal } from "react-icons/io5";
 import TechPill from "./TechPill";
-import { workTechStack } from "@/app/data/workTechStach";
+import { workTechStack } from "@/app/data/workTechStack";
 
 export default function Bio() {
   return (

@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { ReactNode } from "react";
 
-type FadeUpProps = {
+export type FadeUpProps = {
   index?: number;
   children: ReactNode;
 };
