@@ -1,13 +1,9 @@
 import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { ReactNode } from "react";
+import { FadeUpProps } from "./FadeUp";
 
-type FadeUpProps = {
-  index?: number;
-  children: ReactNode;
-};
-
-export default function FadeUp({ index = 1, children }: FadeUpProps) {
+export default function SlowFadeUp({ index = 1, children }: FadeUpProps) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
@@ -25,7 +21,7 @@ export default function FadeUp({ index = 1, children }: FadeUpProps) {
         initial={"initial"}
         animate={fadeUpControls}
         variants={variants}
-        transition={{ delay: 0.05 * index + 0.2 }}
+        transition={{ duration: 0.8, delay: 0.12 * index }}
       >
         {children}
       </motion.div>
@@ -34,6 +30,6 @@ export default function FadeUp({ index = 1, children }: FadeUpProps) {
 }
 
 const variants = {
-  initial: { y: "100%", opacity: 0 },
+  initial: { y: "25%", opacity: 0 },
   fadeUp: { y: "0%", opacity: 1 },
 };
