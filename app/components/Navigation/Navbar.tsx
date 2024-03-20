@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavLink from "./NavLink";
-import { motion } from "framer-motion";
-import Magnetic from "../Animation/Magnetic";
+import { motion, useScroll, useTransform } from "framer-motion";
+import useNavScrollCheck from "@/app/hooks/useNavScrollCheck";
 
 const navLinks: { title: string; href: string }[] = [
   { title: "About", href: "#about" },
@@ -13,6 +13,8 @@ const navLinks: { title: string; href: string }[] = [
 ];
 
 export default function Navbar() {
+  const { selected } = useNavScrollCheck();
+
   return (
     <motion.nav
       initial={{ x: "-100%" }}
@@ -33,6 +35,7 @@ export default function Navbar() {
             title={link.title}
             href={link.href}
             index={index}
+            selected={selected === link.href ? true : false}
           />
         ))}
         <div className="h-screen border-r-2 border-background" />

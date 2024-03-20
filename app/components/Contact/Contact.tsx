@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 export default function Contact() {
   return (
     <section
-      className="pt-64 pb-96 flex flex-col items-center justify-center w-full"
+      className="pt-64 pb-80 flex flex-col items-center justify-center w-full"
       id="contact"
     >
       <Reveal width="w-full">
