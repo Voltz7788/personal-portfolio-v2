@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navigation/Navbar";
 import TopLinks from "./components/Navigation/TopLinks";
+import ScrollTracker from "./components/Animation/ScrollTracker";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,7 +26,9 @@ export default function RootLayout({
         className={`default-dark h-screen bg-foreground ${poppins.className}`}
       >
         <Navbar />
+        <ScrollTracker />
         <TopLinks />
+
         {children}
       </body>
     </html>
