@@ -7,6 +7,8 @@ export default function TopLinks() {
     <div className="fixed flex items-center justify-between w-full mx-16 pl-10 pr-24 h-20 backdrop-blur-sm">
       <SocialLinks />
       <motion.a
+        href="resume.pdf"
+        download={"Resume - Yannis Madu"}
         whileHover={"hover"}
         initial={{ scale: 1 }}
         variants={buttonMotion}
