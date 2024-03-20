@@ -1,8 +1,6 @@
-"use client";
 import { SectionHeading } from "../General/SectionHeading";
 import ExpPanel from "./ExpPanel";
 import { experienceList } from "@/app/data/experienceList";
-import Reveal from "../Animation/Reveal";
 
 export default function Experience() {
   return (
@@ -13,19 +11,17 @@ export default function Experience() {
       </SectionHeading.Root>
       <div>
         {experienceList.map((exp, index) => (
-          <Reveal key={index}>
-            <ExpPanel
-              key={index}
-              company={exp.company}
-              desc={exp.desc}
-              location={exp.location}
-              role={exp.role}
-              techStack={exp.techStack}
-              yearEnd={exp.yearEnd}
-              yearStart={exp.yearStart}
-              index={index}
-            />
-          </Reveal>
+          <ExpPanel
+            key={index}
+            company={exp.company}
+            desc={exp.desc}
+            location={exp.location}
+            role={exp.role}
+            techStack={exp.techStack}
+            yearEnd={exp.yearEnd}
+            yearStart={exp.yearStart}
+            index={index}
+          />
         ))}
       </div>
     </section>

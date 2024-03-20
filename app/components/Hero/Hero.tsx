@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="py-40" id="hero">
       <Reveal>
-        <h1 className="font-black text-[6rem] text-copy">
+        <h1 className="font-black text-8xl text-copy">
           Hey, I&apos;m Yannis<span className="text-primary">.</span>
         </h1>
       </Reveal>

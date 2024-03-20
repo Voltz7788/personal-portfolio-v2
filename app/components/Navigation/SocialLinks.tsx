@@ -7,6 +7,7 @@ import Magnetic from "../Animation/Magnetic";
 import { Url } from "next/dist/shared/lib/router/router";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
+import { socials } from "@/app/data/socials";
 
 type SocialLinkProps = {
   url: Url;
@@ -42,25 +43,25 @@ const SingleLink = ({ url, icon }: SocialLinkProps) => {
 
 export const socialLinks = [
   {
-    url: "https://www.linkedin.com/in/yannismadu/",
+    url: socials.linkedIn,
     icon: (
       <FaLinkedin className="text-2xl text-copy-light hover:text-primary transition-colors" />
     ),
   },
   {
-    url: "https://github.com/Voltz7788",
+    url: socials.github,
     icon: (
       <FaGithub className="text-2xl text-copy-light hover:text-primary transition-colors" />
     ),
   },
   {
-    url: "https://www.youtube.com/channel/UCgxPKeb3nrpenK3XGvzp2tA",
+    url: socials.youtube,
     icon: (
       <FaYoutube className="text-2xl text-copy-light hover:text-primary transition-colors" />
     ),
   },
   {
-    url: "https://www.tiktok.com/@yannismadu?lang=en",
+    url: socials.tiktok,
     icon: (
       <FaTiktok className="text-2xl text-copy-light hover:text-primary transition-colors" />
     ),

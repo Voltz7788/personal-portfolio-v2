@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Experience";
 import CenterContainer from "./components/General/CenterContainer";
 import Hero from "./components/Hero/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
         <About />
         <Projects />
         <Experience />
+        <Contact />
       </CenterContainer>
     </main>
   );
