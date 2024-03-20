@@ -28,7 +28,7 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
       <div
-        className="theme-selector transition-all"
+        className="theme-selector transition-all duration-1000"
         data-theme-primary={theme.dark ? "dark" : "light"}
         data-theme-secondary="joker"
       >

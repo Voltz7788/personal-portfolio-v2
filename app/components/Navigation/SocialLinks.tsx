@@ -35,7 +35,7 @@ export default function SocialLinks() {
 
 const SingleLink = ({ url, icon }: SocialLinkProps) => {
   return (
-    <Link href={url} target="_blank">
+    <Link href={url} target="_blank" className="transition-all duration-300">
       {icon}
     </Link>
   );

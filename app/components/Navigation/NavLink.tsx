@@ -16,10 +16,10 @@ export default function NavLink({
   return (
     <Link href={href}>
       <div
-        className={`grid place-content-center h-24  transition-all 
-      duration-100 border-r-2 border-background  font-extralight 
+        className={`grid place-content-center h-24 
+       border-r-2 border-background  font-extralight 
        text-copy-light text-lg hover:text-copy hover:border-primary 
-       hover:bg-foreground ${
+       hover:bg-foreground transition-all duration-300 ${
          selected ? "text-copy border-primary bg-foreground" : ""
        }`}
       >

@@ -21,12 +21,12 @@ export default function Navbar() {
       initial={{ x: "-100%" }}
       animate={{ x: "0%" }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="h-screen w-16 fixed top-0 bg-background"
+      className="h-screen w-16 fixed top-0 bg-background transition-all duration-300"
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col transition-all duration-300">
         <Link
           href={"#hero"}
-          className="h-20 grid place-content-center border-r-2 border-background text-copy"
+          className="h-20 grid place-content-center border-r-2 border-background text-copy transition-all duration-300"
         >
           L
         </Link>

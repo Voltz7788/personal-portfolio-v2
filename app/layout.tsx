@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth scroll-p-28">
+    <html lang="en" className="scroll-smooth scroll-p-28 ">
       <body
-        className={`h-screen bg-foreground selection:bg-secondary selection:text-copy transition-all duration-1000 ${poppins.className}`}
+        className={`h-screen bg-foreground selection:bg-secondary selection:text-copy  ${poppins.className}`}
       >
         <ThemeProvider>
           <Navbar />
