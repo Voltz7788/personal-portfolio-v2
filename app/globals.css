@@ -114,6 +114,280 @@
     --warning-content: 0, 0%, 0%;
     --error-content: 0, 100%, 95%;
   }
+
+  .yellow-light {
+    --primary: 214, 81%, 50%;
+    --primary-content: 0, 0%, 100%;
+    --primary-dark: 214, 81%, 40%;
+    --primary-light: 214, 81%, 60%;
+
+    --secondary: 54, 81%, 50%;
+    --secondary-content: 60, 100%, 0%;
+    --secondary-dark: 54, 81%, 40%;
+    --secondary-light: 54, 81%, 60%;
+
+    --background: 0, 0%, 94%;
+    --foreground: 0, 0%, 98%;
+    --border: 0, 0%, 87%;
+
+    --copy: 0, 0%, 15%;
+    --copy-light: 0, 0%, 40%;
+    --copy-lighter: 0, 0%, 55%;
+
+    --success: 120, 81%, 50%;
+    --warning: 60, 81%, 50%;
+    --error: 0, 81%, 50%;
+
+    --success-content: 120, 100%, 0%;
+    --warning-content: 60, 100%, 0%;
+    --error-content: 0, 0%, 100%;
+  }
+
+  .yellow-dark {
+    --primary: 214, 81%, 50%;
+    --primary-content: 0, 0%, 100%;
+    --primary-dark: 214, 81%, 40%;
+    --primary-light: 214, 81%, 60%;
+
+    --secondary: 54, 81%, 50%;
+    --secondary-content: 60, 100%, 0%;
+    --secondary-dark: 54, 81%, 40%;
+    --secondary-light: 54, 81%, 60%;
+
+    --background: 0, 0%, 10%;
+    --foreground: 0, 0%, 15%;
+    --border: 0, 0%, 25%;
+
+    --copy: 0, 0%, 98%;
+    --copy-light: 0, 0%, 85%;
+    --copy-lighter: 0, 0%, 65%;
+
+    --success: 120, 81%, 50%;
+    --warning: 60, 81%, 50%;
+    --error: 0, 81%, 50%;
+
+    --success-content: 120, 100%, 0%;
+    --warning-content: 60, 100%, 0%;
+    --error-content: 0, 0%, 100%;
+  }
+
+  .joker-light {
+    --primary: 272, 64%, 51%;
+    --primary-content: 0, 0%, 100%;
+    --primary-dark: 272, 64%, 41%;
+    --primary-light: 272, 64%, 61%;
+
+    --secondary: 152, 64%, 51%;
+    --secondary-content: 150, 50%, 1%;
+    --secondary-dark: 152, 64%, 41%;
+    --secondary-light: 152, 64%, 61%;
+
+    --background: 300, 3%, 94%;
+    --foreground: 0, 0%, 98%;
+    --border: 270, 3%, 87%;
+
+    --copy: 270, 3%, 15%;
+    --copy-light: 270, 3%, 40%;
+    --copy-lighter: 270, 3%, 55%;
+
+    --success: 120, 64%, 51%;
+    --warning: 60, 64%, 51%;
+    --error: 0, 64%, 51%;
+
+    --success-content: 120, 50%, 1%;
+    --warning-content: 60, 50%, 1%;
+    --error-content: 0, 0%, 100%;
+  }
+
+  .joker-dark {
+    --primary: 272, 64%, 51%;
+    --primary-content: 0, 0%, 100%;
+    --primary-dark: 272, 64%, 41%;
+    --primary-light: 272, 64%, 61%;
+
+    --secondary: 152, 64%, 51%;
+    --secondary-content: 150, 50%, 1%;
+    --secondary-dark: 152, 64%, 41%;
+    --secondary-light: 152, 64%, 61%;
+
+    --background: 300, 2%, 10%;
+    --foreground: 270, 3%, 15%;
+    --border: 280, 2%, 25%;
+
+    --copy: 0, 0%, 98%;
+    --copy-light: 270, 3%, 85%;
+    --copy-lighter: 270, 2%, 65%;
+
+    --success: 120, 64%, 51%;
+    --warning: 60, 64%, 51%;
+    --error: 0, 64%, 51%;
+
+    --success-content: 120, 50%, 1%;
+    --warning-content: 60, 50%, 1%;
+    --error-content: 0, 0%, 100%;
+  }
+
+  .moon-light {
+    --primary: 198, 98%, 48%;
+    --primary-content: 0, 0%, 0%;
+    --primary-dark: 198, 98%, 38%;
+    --primary-light: 198, 98%, 58%;
+
+    --secondary: 343, 98%, 48%;
+    --secondary-content: 345, 100%, 98%;
+    --secondary-dark: 343, 98%, 38%;
+    --secondary-light: 343, 98%, 58%;
+
+    --background: 196, 35%, 94%;
+    --foreground: 200, 43%, 99%;
+    --border: 199, 34%, 87%;
+
+    --copy: 200, 35%, 15%;
+    --copy-light: 198, 35%, 40%;
+    --copy-lighter: 198, 35%, 55%;
+
+    --success: 120, 98%, 48%;
+    --warning: 60, 98%, 48%;
+    --error: 0, 98%, 48%;
+    --success-content: 0, 0%, 0%;
+    --warning-content: 0, 0%, 0%;
+    --error-content: 0, 100%, 98%;
+  }
+
+  .moon-dark {
+    --primary: 198, 98%, 48%;
+    --primary-content: 0, 0%, 0%;
+    --primary-dark: 198, 98%, 38%;
+    --primary-light: 198, 98%, 58%;
+
+    --secondary: 343, 98%, 48%;
+    --secondary-content: 345, 100%, 98%;
+    --secondary-dark: 343, 98%, 38%;
+    --secondary-light: 343, 98%, 58%;
+
+    --background: 198, 33%, 10%;
+    --foreground: 200, 35%, 15%;
+    --border: 199, 35%, 25%;
+
+    --copy: 200, 43%, 99%;
+    --copy-light: 198, 35%, 85%;
+    --copy-lighter: 198, 35%, 65%;
+
+    --success: 120, 98%, 48%;
+    --warning: 60, 98%, 48%;
+    --error: 0, 98%, 48%;
+    --success-content: 0, 0%, 0%;
+    --warning-content: 0, 0%, 0%;
+    --error-content: 0, 100%, 98%;
+  }
+
+  .purple-light {
+    --primary: 285, 71%, 54%;
+    --primary-content: 0, 0%, 100%;
+    --primary-dark: 285, 71%, 44%;
+    --primary-light: 285, 70%, 64%;
+
+    --secondary: 240, 71%, 54%;
+    --secondary-content: 0, 0%, 100%;
+    --secondary-dark: 240, 71%, 44%;
+    --secondary-light: 240, 70%, 64%;
+
+    --background: 280, 10%, 94%;
+    --foreground: 240, 14%, 99%;
+    --border: 290, 9%, 87%;
+
+    --copy: 285, 11%, 15%;
+    --copy-light: 285, 10%, 40%;
+    --copy-lighter: 284, 10%, 55%;
+
+    --success: 120, 71%, 54%;
+    --warning: 60, 71%, 54%;
+    --error: 0, 71%, 54%;
+    --success-content: 120, 73%, 4%;
+    --warning-content: 60, 73%, 4%;
+    --error-content: 0, 0%, 100%;
+  }
+
+  .purple-dark {
+    --primary: 285, 71%, 54%;
+    --primary-content: 0, 0%, 100%;
+    --primary-dark: 285, 71%, 44%;
+    --primary-light: 285, 70%, 64%;
+
+    --secondary: 240, 71%, 54%;
+    --secondary-content: 0, 0%, 100%;
+    --secondary-dark: 240, 71%, 44%;
+    --secondary-light: 240, 70%, 64%;
+
+    --background: 288, 10%, 10%;
+    --foreground: 285, 11%, 15%;
+    --border: 286, 10%, 25%;
+
+    --copy: 240, 14%, 99%;
+    --copy-light: 285, 11%, 85%;
+    --copy-lighter: 283, 10%, 65%;
+
+    --success: 120, 71%, 54%;
+    --warning: 60, 71%, 54%;
+    --error: 0, 71%, 54%;
+    --success-content: 120, 73%, 4%;
+    --warning-content: 60, 73%, 4%;
+    --error-content: 0, 0%, 100%;
+  }
+
+  .garden-light {
+    --primary: 192, 40%, 40%;
+    --primary-content: 193, 39%, 90%;
+    --primary-dark: 192, 39%, 30%;
+    --primary-light: 192, 40%, 50%;
+
+    --secondary: 102, 40%, 40%;
+    --secondary-content: 101, 39%, 90%;
+    --secondary-dark: 102, 39%, 30%;
+    --secondary-light: 102, 40%, 50%;
+
+    --background: 180, 3%, 94%;
+    --foreground: 0, 0%, 98%;
+    --border: 180, 3%, 87%;
+
+    --copy: 180, 3%, 15%;
+    --copy-light: 190, 3%, 40%;
+    --copy-lighter: 190, 3%, 55%;
+
+    --success: 120, 40%, 40%;
+    --warning: 60, 40%, 40%;
+    --error: 0, 40%, 40%;
+    --success-content: 120, 39%, 90%;
+    --warning-content: 0, 0%, 0%;
+    --error-content: 0, 39%, 90%;
+  }
+
+  .garden-dark {
+    --primary: 192, 40%, 40%;
+    --primary-content: 193, 39%, 90%;
+    --primary-dark: 192, 39%, 30%;
+    --primary-light: 192, 40%, 50%;
+
+    --secondary: 102, 40%, 40%;
+    --secondary-content: 101, 39%, 90%;
+    --secondary-dark: 102, 39%, 30%;
+    --secondary-light: 102, 40%, 50%;
+
+    --background: 180, 2%, 10%;
+    --foreground: 180, 3%, 15%;
+    --border: 180, 2%, 25%;
+
+    --copy: 0, 0%, 98%;
+    --copy-light: 210, 3%, 85%;
+    --copy-lighter: 195, 2%, 65%;
+
+    --success: 120, 40%, 40%;
+    --warning: 60, 40%, 40%;
+    --error: 0, 40%, 40%;
+    --success-content: 120, 39%, 90%;
+    --warning-content: 0, 0%, 0%;
+    --error-content: 0, 39%, 90%;
+  }
 }
 
 /* .template {

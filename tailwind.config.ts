@@ -22,7 +22,7 @@ const config: Config = {
         secondary: "hsla(var(--secondary))",
         "secondary-content": "hsla(var(--secondary-content))",
         "secondary-dark": "hsla(var(--secondary-dark))",
-        "secondary-light": "hsla(var(--secondary-light)",
+        "secondary-light": "hsla(var(--secondary-light))",
 
         background: "hsla(var(--background))",
         foreground: "hsla(var(--foreground))",

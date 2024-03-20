@@ -39,7 +39,7 @@ export default function Reveal({ children, width = "w-fit" }: RevealProps) {
         initial={"hidden"}
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute top-[4px] bottom-[4px] left-0 right-0 bg-secondary z-20"
+        className="absolute top-[4px] bottom-[4px] left-0 right-0 bg-primary z-20"
       />
     </div>
   );

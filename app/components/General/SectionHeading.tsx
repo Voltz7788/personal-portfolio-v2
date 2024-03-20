@@ -8,10 +8,10 @@ export default function Root({ children }: { children: ReactNode }) {
 const Title = ({ title }: { title: string }) => {
   return (
     <Reveal width="w-fit">
-      <h2 className="text-6xl font-black text-copy w-fit">
+      <h3 className="text-6xl font-black text-copy w-fit py-2">
         {title}
-        <span className="text-secondary">.</span>
-      </h2>
+        <span className="text-primary">.</span>
+      </h3>
     </Reveal>
   );
 };

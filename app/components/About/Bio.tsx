@@ -54,7 +54,7 @@ export default function Bio() {
           <Reveal width="w-full">
             <div className="flex items-center gap-2 text-xl font-bold">
               <IoTerminal className="text-secondary" />
-              <h3>Use at work</h3>
+              <h4>Tech stack</h4>
             </div>
           </Reveal>
 
