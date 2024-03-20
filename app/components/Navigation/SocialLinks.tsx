@@ -15,7 +15,7 @@ type SocialLinkProps = {
 
 export default function SocialLinks() {
   return (
-    <div className="flex justify-between w-44">
+    <div className="flex justify-between w-44 py-4">
       {socialLinks.map((link, index) => (
         <motion.div
           initial={{ y: "-300%", opacity: 0 }}
@@ -40,7 +40,7 @@ const SingleLink = ({ url, icon }: SocialLinkProps) => {
   );
 };
 
-const socialLinks = [
+export const socialLinks = [
   {
     url: "https://www.linkedin.com/in/yannismadu/",
     icon: (
