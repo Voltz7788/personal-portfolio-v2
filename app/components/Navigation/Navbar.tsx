@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="h-screen w-16 fixed top-0 bg-background ">
       <div className="flex flex-col">
         <Link
-          href={"/"}
+          href={"#hero"}
           className="h-20 grid place-content-center border-r-2 border-background text-white"
         >
           L

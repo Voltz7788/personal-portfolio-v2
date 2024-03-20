@@ -8,7 +8,7 @@ export default function TopLinks() {
       <SocialLinks />
       <motion.a
         href="resume.pdf"
-        download={"Resume - Yannis Madu"}
+        target="_blank"
         whileHover={"hover"}
         initial={{ scale: 1 }}
         variants={buttonMotion}
