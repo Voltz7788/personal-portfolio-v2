@@ -10,7 +10,7 @@ const Title = ({ title }: { title: string }) => {
     <Reveal width="w-fit">
       <h2 className="text-6xl font-black text-copy w-fit">
         {title}
-        <span className="text-secondary">.</span>
+        <span className="text-primary">.</span>
       </h2>
     </Reveal>
   );
