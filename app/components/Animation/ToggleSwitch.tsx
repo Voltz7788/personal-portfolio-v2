@@ -4,20 +4,22 @@ import { motion, useAnimation } from "framer-motion";
 
 export default function ToggleSwitch() {
   const [theme, setTheme] = useContext(ThemeContext);
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(true);
 
   const toggleControls = useAnimation();
   const backgroundControls = useAnimation();
 
   useEffect(() => {
     if (setTheme) {
-      setTheme({ dark: !theme.dark, secondary: "default" });
+      // setTheme({ dark: !theme.dark, secondary: "default" });
       console.log(checked);
 
       if (checked) {
+        setTheme({ dark: true, secondary: "default" });
         toggleControls.start("active");
         backgroundControls.start("active");
       } else {
+        setTheme({ dark: false, secondary: "default" });
         toggleControls.start("inactive");
         backgroundControls.start("inactive");
       }

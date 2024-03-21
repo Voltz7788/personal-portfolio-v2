@@ -24,7 +24,7 @@ export default function Navbar() {
       className="h-screen w-16 fixed top-0 bg-background transition-all duration-300"
     >
       <div className="flex flex-col justify-between items-center h-screen transition-all duration-300">
-        <div>
+        <div className="w-full">
           <Link
             href={"#hero"}
             className="h-20 grid place-content-center border-r-2 border-background text-copy transition-all duration-300"

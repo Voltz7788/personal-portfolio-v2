@@ -19,12 +19,12 @@ type ThemeContextType = [
 ];
 
 export const ThemeContext = createContext<ThemeContextType>([
-  { dark: false, secondary: "default" },
+  { dark: true, secondary: "default" },
   null,
 ]);
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState({ dark: false, secondary: "default" });
+  const [theme, setTheme] = useState({ dark: true, secondary: "default" });
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
       <div
