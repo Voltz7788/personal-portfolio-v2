@@ -14,8 +14,6 @@ export default function useNavScrollCheck() {
           setSelected("#experience");
         if (window.scrollY > 3050) setSelected("#contact");
       });
-
-      console.log(window.scrollY);
     }
   });
   return { selected };

@@ -23,22 +23,24 @@ export default function Navbar() {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="h-screen w-16 fixed top-0 bg-background transition-all duration-300"
     >
-      <div className="flex flex-col transition-all duration-300">
-        <Link
-          href={"#hero"}
-          className="h-20 grid place-content-center border-r-2 border-background text-copy transition-all duration-300"
-        >
-          L
-        </Link>
-        {navLinks.map((link, index) => (
-          <NavLink
-            key={link.title}
-            title={link.title}
-            href={link.href}
-            index={index}
-            selected={selected === link.href ? true : false}
-          />
-        ))}
+      <div className="flex flex-col justify-between items-center h-screen transition-all duration-300">
+        <div>
+          <Link
+            href={"#hero"}
+            className="h-20 grid place-content-center border-r-2 border-background text-copy transition-all duration-300"
+          >
+            L
+          </Link>
+          {navLinks.map((link, index) => (
+            <NavLink
+              key={link.title}
+              title={link.title}
+              href={link.href}
+              index={index}
+              selected={selected === link.href ? true : false}
+            />
+          ))}
+        </div>
         <ToggleSwitch />
       </div>
     </motion.nav>
