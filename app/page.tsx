@@ -7,7 +7,7 @@ import Projects from "./components/Projects/Projects";
 
 export default function Home() {
   return (
-    <main className="bg-foreground min-h-full">
+    <main className="bg-foreground min-h-full transition-all duration-300">
       <CenterContainer>
         <Hero />
         <About />
