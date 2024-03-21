@@ -11,9 +11,6 @@ export default function ToggleSwitch() {
 
   useEffect(() => {
     if (setTheme) {
-      // setTheme({ dark: !theme.dark, secondary: "default" });
-      console.log(checked);
-
       if (checked) {
         setTheme({ dark: true, secondary: "default" });
         toggleControls.start("active");
