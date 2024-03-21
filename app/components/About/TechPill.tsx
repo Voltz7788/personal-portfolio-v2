@@ -11,7 +11,7 @@ export default function TechPill({
 }) {
   return (
     <FadeUp index={index}>
-      <div className="flex items-center gap-2 px-3 py-1.5 rounded-full w-fit text-copy-light bg-border">
+      <div className="flex items-center gap-2 px-3 py-1.5 rounded-full w-fit text-copy-light bg-border transition-all duration-300">
         {icon}
         <p>{name}</p>
       </div>
