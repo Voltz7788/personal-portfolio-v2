@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 import { motion } from "framer-motion";
 import useNavScrollCheck from "@/app/hooks/useNavScrollCheck";
 import ToggleSwitch from "../Animation/ToggleSwitch";
+import ThemeSelector from "./ThemeSelector";
 
 const navLinks: { title: string; href: string }[] = [
   { title: "About", href: "#about" },
@@ -41,7 +42,10 @@ export default function Navbar() {
             />
           ))}
         </div>
-        <ToggleSwitch />
+        <div>
+          <ThemeSelector />
+          <ToggleSwitch />
+        </div>
       </div>
     </motion.nav>
   );

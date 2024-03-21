@@ -12,11 +12,11 @@ export default function ToggleSwitch() {
   useEffect(() => {
     if (setTheme) {
       if (checked) {
-        setTheme({ dark: true, secondary: "default" });
+        setTheme({ ...theme, dark: true });
         toggleControls.start("active");
         backgroundControls.start("active");
       } else {
-        setTheme({ dark: false, secondary: "default" });
+        setTheme({ ...theme, dark: false });
         toggleControls.start("inactive");
         backgroundControls.start("inactive");
       }
