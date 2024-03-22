@@ -11,6 +11,7 @@ export default function ThemeSelector() {
   const handleThemeChange = (newTheme: string) => {
     if (setMainTheme) {
       setMainTheme({ ...mainTheme, secondary: newTheme });
+      localStorage.setItem("theme", newTheme);
     }
   };
 
@@ -35,7 +36,7 @@ export default function ThemeSelector() {
         animate={containerControls}
         className={`mx-auto relative mb-10 flex justify-between
        flex-col items-center border border-border gap-2  transition-colors duration-300 
-        rounded-full overflow-hidden ${
+        rounded-full overflow-hidden cursor-pointer ${
           open ? "bg-foreground py-3" : "bg-foreground py-0"
         }`}
         onClick={() => setOpen(!open)}
@@ -45,7 +46,7 @@ export default function ThemeSelector() {
             variants={previewVariants}
             initial={"initial"}
             animate={previewControls}
-            className="top-1 bg-secondary h-7 w-7 rounded-full"
+            className="top-1 bg-secondary h-7 w-7 rounded-full hover:bg-primary transition-colors duration-300"
           />
         </div>
 
@@ -58,7 +59,7 @@ export default function ThemeSelector() {
                 name={theme.name}
               >
                 <motion.button
-                  className={`h-7 w-7 rounded-full ${theme.color.secondary}`}
+                  className={`h-7 w-7 rounded-full ${theme.color.secondary} hover:scale-110 transition-transform`}
                   onClick={() => handleThemeChange(theme.name)}
                 />
               </FadeUpOnPress>
@@ -79,7 +80,7 @@ const containerVariants = {
     },
   },
   animate: {
-    height: 40 * 10,
+    height: 40 * 6,
     width: 40,
     transition: { type: "spring", duration: 0.3, delay: 0.1 },
   },

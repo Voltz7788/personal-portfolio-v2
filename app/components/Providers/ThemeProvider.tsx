@@ -6,6 +6,7 @@ import {
   createContext,
   Dispatch,
   SetStateAction,
+  useEffect,
 } from "react";
 
 type ThemeContextType = [
@@ -28,6 +29,15 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
     dark: true,
     secondary: "default",
   });
+
+  useEffect(() => {
+    const selectedTheme = localStorage.getItem("theme");
+
+    if (selectedTheme) {
+      setTheme({ ...theme, secondary: selectedTheme });
+    }
+  }, []);
+
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
       <div
