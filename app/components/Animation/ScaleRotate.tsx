@@ -5,7 +5,6 @@ import { ReactNode } from "react";
 export default function ScaleRotate({ children }: { children: ReactNode }) {
   return (
     <motion.div
-      initial={{ scale: 1, rotate: "0deg" }}
       variants={variants}
       transition={{ ease: "easeInOut", duration: 0.16 }}
       className="w-full"
@@ -15,4 +14,7 @@ export default function ScaleRotate({ children }: { children: ReactNode }) {
   );
 }
 
-const variants = { hover: { scale: 1.12, rotate: "1deg" } };
+const variants = {
+  initial: { scale: 1, rotate: "0deg" },
+  hover: { scale: 1.12, rotate: "1deg" },
+};

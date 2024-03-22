@@ -1,31 +1,39 @@
-import { ReactNode } from "react";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import { IoIosArrowForward } from "react-icons/io";
 import Image, { StaticImageData } from "next/image";
-import monotaskrScreenshot from "../../../public/monotaskr-screenshot.png";
 import ScaleRotate from "../Animation/ScaleRotate";
 import { Url } from "next/dist/shared/lib/router/router";
+import { motion } from "framer-motion";
+import DetailedProjectCard from "./DetailedProjectCard";
 
 export default function Card({
   children,
   image,
+  setOpen,
 }: {
   children: ReactNode;
   image: StaticImageData;
+  setOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
-    <div className="flex flex-col  w-full transition-all duration-300">
-      <div className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300">
+    <div className="flex flex-col w-full transition-all duration-300">
+      <motion.button
+        initial={"initial"}
+        whileHover={"hover"}
+        onClick={() => setOpen(true)}
+        className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300"
+      >
         <ScaleRotate>
           <Image
             src={image}
-            alt="Monotaskr.com"
+            alt="Project image"
             className="w-4/5 mx-auto h-44 rounded-t-lg object-cover"
           />
         </ScaleRotate>
-      </div>
+      </motion.button>
       {children}
     </div>
   );
@@ -64,10 +72,19 @@ const Highlights = ({ highlights }: { highlights: string[] }) => (
   </p>
 );
 
-const Content = ({ desc }: { desc: string }) => (
+const Content = ({
+  descShort,
+  setOpen,
+}: {
+  descShort: string;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}) => (
   <p className="text-copy-light font-light mt-3 transition-all duration-300">
-    {desc}{" "}
-    <button className="text-secondary font-normal inline hover:underline transition-all duration-300">
+    {descShort}{" "}
+    <button
+      onClick={() => setOpen(true)}
+      className="text-secondary font-normal inline hover:underline transition-all duration-300"
+    >
       <p className="flex items-center">
         Learn more
         <IoIosArrowForward className="inline" />
