@@ -11,6 +11,7 @@ export default function ThemeSelector() {
   const handleThemeChange = (newTheme: string) => {
     if (setMainTheme) {
       setMainTheme({ ...mainTheme, secondary: newTheme });
+      localStorage.setItem("theme", newTheme);
     }
   };
 
