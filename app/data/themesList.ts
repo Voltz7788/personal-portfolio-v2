@@ -24,7 +24,7 @@ export const themesList: {
   },
   {
     name: "moon",
-    color: { primary: "bg-[#119788]", secondary: "bg-[#02AAF2]" },
+    color: { primary: "bg-[#02AAF2]", secondary: "bg-[#F20246]" },
   },
   {
     name: "joker",
