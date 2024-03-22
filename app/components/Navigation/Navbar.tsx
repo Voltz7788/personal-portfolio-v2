@@ -28,9 +28,17 @@ export default function Navbar() {
         <div className="w-full">
           <Link
             href={"#hero"}
-            className="h-20 grid place-content-center border-r-2 border-background text-copy transition-all duration-300"
+            className="h-20 grid place-content-center border-r-2 border-background text-copy text-xl font-bold transition-all duration-300"
           >
-            L
+            <div className="h-12 bg-foreground w-12 rounded grid place-content-center transition-all duration-300">
+              <p>
+                {" "}
+                YM
+                <span className="text-secondary transition-all duration-300">
+                  .
+                </span>
+              </p>
+            </div>
           </Link>
           {navLinks.map((link, index) => (
             <NavLink
