@@ -8,7 +8,7 @@ import { workTechStack } from "@/app/data/workTechStack";
 
 export default function Bio() {
   return (
-    <div className="grid grid-cols-5 gap-7 w-full mt-10">
+    <div className="flex flex-col lg:grid lg:grid-cols-5 gap-7 w-full mt-10">
       <div className="text-copy-light col-span-3 flex flex-col gap-5 font-light text-lg">
         <Reveal>
           <p className="transition-all duration-300">
