@@ -12,7 +12,8 @@ export default function ProjectContainer({
   repoURL,
   liveURL,
   highlights,
-  desc,
+  descShort,
+  descFull,
   index,
 }: ProjectProps & { index: number }) {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,7 @@ export default function ProjectContainer({
             <Project.Highlights highlights={highlights} />
           </Reveal>
           <Reveal>
-            <Project.Content desc={desc} setOpen={setOpen} />
+            <Project.Content descShort={descShort} setOpen={setOpen} />
           </Reveal>
         </Project.Card>
       </SlowFadeUp>
@@ -33,11 +34,12 @@ export default function ProjectContainer({
         open={open}
         setOpen={setOpen}
         image={image}
-        desc={desc}
+        descFull={descFull}
         title={title}
         repoURL={repoURL}
         liveURL={liveURL}
         highlights={highlights}
+        descShort={descShort}
       />
     </motion.div>
   );

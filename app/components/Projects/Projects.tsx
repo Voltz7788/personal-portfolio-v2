@@ -22,7 +22,8 @@ export default function Projects() {
           <ProjectContainer
             key={project.title}
             title={project.title}
-            desc={project.desc}
+            descShort={project.descShort}
+            descFull={project.descFull}
             index={index}
             liveURL={project.liveURL}
             repoURL={project.repoURL}

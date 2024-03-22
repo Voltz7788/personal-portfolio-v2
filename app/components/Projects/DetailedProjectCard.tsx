@@ -12,7 +12,7 @@ export default function DetailedProjectCard({
   setOpen,
   title,
   highlights,
-  desc,
+  descFull,
   image,
   liveURL,
   repoURL,
@@ -36,7 +36,7 @@ export default function DetailedProjectCard({
           initial={"closed"}
           animate={overlayControls}
           exit={"closed"}
-          transition={{ duration: 0.15 }}
+          transition={{ duration: 0.07 }}
           onClick={() => setOpen(false)}
           className={` ${
             open ? "block" : "hidden"
@@ -78,7 +78,7 @@ export default function DetailedProjectCard({
                     {highlights.toString().replaceAll(",", " - ")}
                   </p>
                   <p className="text-copy-light font-light mt-5 transition-all duration-300">
-                    {desc}
+                    {descFull}
                   </p>
                 </div>
                 <div className="row-span-1">

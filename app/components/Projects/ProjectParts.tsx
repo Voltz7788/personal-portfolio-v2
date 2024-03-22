@@ -73,14 +73,14 @@ const Highlights = ({ highlights }: { highlights: string[] }) => (
 );
 
 const Content = ({
-  desc,
+  descShort,
   setOpen,
 }: {
-  desc: string;
+  descShort: string;
   setOpen: Dispatch<SetStateAction<boolean>>;
 }) => (
   <p className="text-copy-light font-light mt-3 transition-all duration-300">
-    {desc}{" "}
+    {descShort}{" "}
     <button
       onClick={() => setOpen(true)}
       className="text-secondary font-normal inline hover:underline transition-all duration-300"

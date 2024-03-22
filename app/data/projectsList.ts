@@ -10,14 +10,16 @@ export const projectsList: {
   repoURL: Url;
   liveURL: Url;
   highlights: string[];
-  desc: string;
+  descShort: string;
+  descFull: string;
   image: StaticImageData;
 }[] = [
   {
     title: "Monotaskr",
     repoURL: "https://github.com/Voltz7788/full-task-essa",
     liveURL: "https://www.monotaskr.com/",
-    desc: "Lorem ipsum",
+    descShort: "Lorem ipsum",
+    descFull: "Lorem ipsum",
     highlights: ["Next", "Tailwind", "Pusher", "PostgreSQL"],
     image: monotaskrScreenshot,
   },
@@ -25,7 +27,8 @@ export const projectsList: {
     title: "OnlyFans (Parody)",
     repoURL: "https://github.com/Voltz7788/onlyfans-with-actual-fans",
     liveURL: "https://onlyfans-with-actual-fans.vercel.app/",
-    desc: "Lorem ipsum",
+    descShort: "Lorem ipsum",
+    descFull: "Lorem ipsum",
     highlights: ["Next", "Tailwind", "Typescript", "AWS S3"],
     image: onlyFansScreenshot,
   },
@@ -33,7 +36,8 @@ export const projectsList: {
     title: "Accountant Site Remake",
     repoURL: "https://github.com/Voltz7788/accountant-site-demo",
     liveURL: "https://accountant-site-demo.vercel.app/",
-    desc: "Lorem ipsum",
+    descShort: "Lorem ipsum",
+    descFull: "Lorem ipsum",
     highlights: ["React", "Next", "Tailwind", "Typescript"],
     image: accountSiteScreenshot,
   },
@@ -41,7 +45,8 @@ export const projectsList: {
     title: "Calculator 2099",
     repoURL: "https://github.com/Voltz7788/calculator",
     liveURL: "https://voltz7788.github.io/calculator/",
-    desc: "Lorem ipsum",
+    descShort: "Lorem ipsum",
+    descFull: "Lorem ipsum",
     highlights: ["HTML", "CSS", "Javascript"],
     image: calculatorScreenshot,
   },

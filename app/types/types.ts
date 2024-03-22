@@ -16,6 +16,7 @@ export type ProjectProps = {
   repoURL: Url;
   liveURL: Url;
   highlights: string[];
-  desc: string;
+  descShort: string;
+  descFull: string;
   image: StaticImageData;
 };
