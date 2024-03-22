@@ -44,7 +44,7 @@ export default function Navbar() {
         </div>
         <div>
           <ThemeSelector />
-          <ToggleSwitch />
+          {/* <ToggleSwitch /> */}
         </div>
       </div>
     </motion.nav>

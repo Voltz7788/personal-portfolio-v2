@@ -79,7 +79,7 @@ const containerVariants = {
     },
   },
   animate: {
-    height: 40 * 10,
+    height: 40 * 6,
     width: 40,
     transition: { type: "spring", duration: 0.3, delay: 0.1 },
   },
