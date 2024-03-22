@@ -11,7 +11,8 @@ export default function Contact() {
     >
       <Reveal width="w-full">
         <h2 className="font-black text-[5.5rem] text-copy w-full text-center transition-all duration-300">
-          Contact<span className="text-primary">.</span>
+          Contact
+          <span className="text-primary transition-all duration-300">.</span>
         </h2>
       </Reveal>
       <Reveal width="w-fit">

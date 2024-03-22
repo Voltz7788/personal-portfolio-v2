@@ -24,13 +24,16 @@ export const ThemeContext = createContext<ThemeContextType>([
 ]);
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState({ dark: true, secondary: "default" });
+  const [theme, setTheme] = useState({
+    dark: true,
+    secondary: "cookiesAndCream",
+  });
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
       <div
         className="theme-selector"
         data-theme-primary={theme.dark ? "dark" : "light"}
-        data-theme-secondary="default"
+        data-theme-secondary={theme.secondary}
       >
         {children}
       </div>

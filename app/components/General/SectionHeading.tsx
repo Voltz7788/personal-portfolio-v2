@@ -10,7 +10,7 @@ const Title = ({ title }: { title: string }) => {
     <Reveal width="w-fit">
       <h3 className="text-6xl font-black text-copy w-fit py-2 transition-all duration-300">
         {title}
-        <span className="text-primary">.</span>
+        <span className="text-primary transition-all duration-300">.</span>
       </h3>
     </Reveal>
   );
