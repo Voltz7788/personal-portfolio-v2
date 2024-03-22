@@ -55,53 +55,60 @@ export default function DetailedProjectCard({
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
     h-5/6 max-w-[750px] rounded-2xl w-full z-50 grid grid-rows-2 grid-cols-1"
           >
-            {/* Image */}
-            <Image
-              src={image}
-              alt={title}
-              className="rounded-t-2xl h-full object-cover"
-            />
+            <motion.div
+              variants={contentVariants}
+              initial={"closed"}
+              animate={overlayControls}
+              exit={"closed"}
+            >
+              {/* Image */}
+              <Image
+                src={image}
+                alt={title}
+                className="rounded-t-2xl h-full object-cover"
+              />
 
-            {/* Content */}
-            <div className="h-full bg-border rounded-b-2xl px-8 py-10 grid grid-rows-5">
-              <div className="row-span-4">
-                <h5 className="text-copy text-4xl font-bold transition-all duration-300">
-                  {title}
-                </h5>
-                <p className="text-secondary mt-2 transition-all duration-300">
-                  {highlights.toString().replaceAll(",", " - ")}
-                </p>
-                <p className="text-copy-light font-light mt-5 transition-all duration-300">
-                  {desc}
-                </p>
-              </div>
-              <div className="row-span-1">
-                <h6 className="mt-4 text-xl font-bold text-copy transition-all duration-300">
-                  Project Links
-                  <span className="text-secondary transition-all duration-300">
-                    .
-                  </span>
-                </h6>
-                <div className="flex gap-5 mt-2">
-                  <Link
-                    href={repoURL}
-                    target="_blank"
-                    className="text-secondary transition-all duration-300 flex items-center gap-1"
-                  >
-                    <FaGithub className="text-xl text-secondary transition-all duration-300" />
-                    <p className="hover:underline">source code</p>
-                  </Link>
-                  <Link
-                    href={liveURL}
-                    target="_blank"
-                    className="text-secondary transition-all duration-300 flex items-center gap-1"
-                  >
-                    <BiLinkExternal className="text-xl text-secondary transition-all duration-300" />
-                    <p className="hover:underline">live project</p>
-                  </Link>
+              {/* Content */}
+              <div className="h-full bg-border rounded-b-2xl px-8 py-10 grid grid-rows-5">
+                <div className="row-span-4">
+                  <h5 className="text-copy text-4xl font-bold transition-all duration-300">
+                    {title}
+                  </h5>
+                  <p className="text-secondary mt-2 transition-all duration-300">
+                    {highlights.toString().replaceAll(",", " - ")}
+                  </p>
+                  <p className="text-copy-light font-light mt-5 transition-all duration-300">
+                    {desc}
+                  </p>
+                </div>
+                <div className="row-span-1">
+                  <h6 className="mt-4 text-xl font-bold text-copy transition-all duration-300">
+                    Project Links
+                    <span className="text-secondary transition-all duration-300">
+                      .
+                    </span>
+                  </h6>
+                  <div className="flex gap-5 mt-2">
+                    <Link
+                      href={repoURL}
+                      target="_blank"
+                      className="text-secondary transition-all duration-300 flex items-center gap-1"
+                    >
+                      <FaGithub className="text-xl text-secondary transition-all duration-300" />
+                      <p className="hover:underline">source code</p>
+                    </Link>
+                    <Link
+                      href={liveURL}
+                      target="_blank"
+                      className="text-secondary transition-all duration-300 flex items-center gap-1"
+                    >
+                      <BiLinkExternal className="text-xl text-secondary transition-all duration-300" />
+                      <p className="hover:underline">live project</p>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       )}
@@ -112,4 +119,9 @@ export default function DetailedProjectCard({
 const overlayVariants = {
   closed: { opacity: 0 },
   opened: { opacity: 1 },
+};
+
+const contentVariants = {
+  closed: { opacity: 0, y: "100%" },
+  opened: { opacity: 1, y: "0%" },
 };
