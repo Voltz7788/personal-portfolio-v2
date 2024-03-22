@@ -4,9 +4,9 @@ import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import { IoIosArrowForward } from "react-icons/io";
 import Image, { StaticImageData } from "next/image";
-import monotaskrScreenshot from "../../../public/monotaskr-screenshot.png";
 import ScaleRotate from "../Animation/ScaleRotate";
 import { Url } from "next/dist/shared/lib/router/router";
+import { motion } from "framer-motion";
 
 export default function Card({
   children,
@@ -16,18 +16,22 @@ export default function Card({
   image: StaticImageData;
 }) {
   return (
-    <div className="flex flex-col  w-full transition-all duration-300">
+    <motion.div
+      initial={"initial"}
+      whileHover={"hover"}
+      className="flex flex-col  w-full transition-all duration-300"
+    >
       <div className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300">
         <ScaleRotate>
           <Image
             src={image}
-            alt="Monotaskr.com"
+            alt="Project image"
             className="w-4/5 mx-auto h-44 rounded-t-lg object-cover"
           />
         </ScaleRotate>
       </div>
       {children}
-    </div>
+    </motion.div>
   );
 }
 
