@@ -14,25 +14,33 @@ export default function ExpPanel({
   index,
 }: Exp & { index: number }) {
   return (
-    <div className="border-b border-border text-lg mt-8">
+    <div className="border-b border-border text-lg mt-8 transition-all duration-300">
       <div className="flex justify-between ">
         <Reveal>
-          <h4 className="text-copy font-bold text-xl ">{company}</h4>
+          <h4 className="text-copy font-bold text-xl transition-all duration-300">
+            {company}
+          </h4>
         </Reveal>
         <Reveal>
-          <p className="text-copy-light">{`${yearStart} - ${yearEnd}`}</p>
+          <p className="text-copy-light transition-all duration-300">{`${yearStart} - ${yearEnd}`}</p>
         </Reveal>
       </div>
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 ">
         <Reveal>
-          <p className="text-secondary font-bold">{role}</p>
+          <p className="text-secondary font-bold transition-all duration-300">
+            {role}
+          </p>
         </Reveal>
         <Reveal>
-          <p className="text-copy-light">{location}</p>
+          <p className="text-copy-light transition-all duration-300">
+            {location}
+          </p>
         </Reveal>
       </div>
       <Reveal>
-        <p className="mt-2 text-copy-lighter font-light">{desc}</p>
+        <p className="mt-2 text-copy-lighter font-light transition-all duration-300">
+          {desc}
+        </p>
       </Reveal>
       <div className="flex gap-3 my-6">
         {techStack.map((tech, index) => (

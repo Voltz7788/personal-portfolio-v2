@@ -35,7 +35,7 @@ export default function SocialLinks() {
 
 const SingleLink = ({ url, icon }: SocialLinkProps) => {
   return (
-    <Link href={url} target="_blank">
+    <Link href={url} target="_blank" className="transition-all duration-300">
       {icon}
     </Link>
   );
@@ -45,25 +45,25 @@ export const socialLinks = [
   {
     url: socials.linkedIn,
     icon: (
-      <FaLinkedin className="text-2xl text-copy-light hover:text-primary transition-colors" />
+      <FaLinkedin className="text-2xl text-copy-light hover:text-primary transition-all duration-300" />
     ),
   },
   {
     url: socials.github,
     icon: (
-      <FaGithub className="text-2xl text-copy-light hover:text-primary transition-colors" />
+      <FaGithub className="text-2xl text-copy-light hover:text-primary transition-all duration-300" />
     ),
   },
   {
     url: socials.youtube,
     icon: (
-      <FaYoutube className="text-2xl text-copy-light hover:text-primary transition-colors" />
+      <FaYoutube className="text-2xl text-copy-light hover:text-primary transition-all duration-300" />
     ),
   },
   {
     url: socials.tiktok,
     icon: (
-      <FaTiktok className="text-2xl text-copy-light hover:text-primary transition-colors" />
+      <FaTiktok className="text-2xl text-copy-light hover:text-primary transition-all duration-300" />
     ),
   },
 ];

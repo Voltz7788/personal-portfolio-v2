@@ -16,8 +16,8 @@ export default function Card({
   image: StaticImageData;
 }) {
   return (
-    <div className="flex flex-col  w-full">
-      <div className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden">
+    <div className="flex flex-col  w-full transition-all duration-300">
+      <div className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300">
         <ScaleRotate>
           <Image
             src={image}
@@ -40,32 +40,34 @@ const Heading = ({
   repoURL: Url;
   liveURL: Url;
 }) => (
-  <div className="flex items-center gap-3 mt-4">
-    <h4 className="text-2xl text-copy font-bold">{title}</h4>
-    <div className="h-0.5 border-t border-copy-lighter grow" />
+  <div className="flex items-center gap-3 mt-4 transition-all duration-300">
+    <h4 className="text-2xl text-copy font-bold transition-all duration-300">
+      {title}
+    </h4>
+    <div className="h-0.5 border-t border-copy-lighter grow transition-all duration-300" />
 
     {/* Repository Link */}
     <Link href={repoURL} target="_blank">
-      <FaGithub className="text-[27px] text-copy-lighter hover:text-copy transition-colors duration-200" />
+      <FaGithub className="text-[27px] text-copy-lighter hover:text-copy transition-all duration-300" />
     </Link>
 
     {/* Live Link */}
     <Link href={liveURL} target="_blank">
-      <BiLinkExternal className="text-[27px] text-copy-lighter hover:text-copy transition-colors duration-200" />
+      <BiLinkExternal className="text-[27px] text-copy-lighter hover:text-copy transition-all duration-300" />
     </Link>
   </div>
 );
 
 const Highlights = ({ highlights }: { highlights: string[] }) => (
-  <p className="text-secondary mt-1">
+  <p className="text-secondary mt-1 transition-all duration-300">
     {highlights.toString().replaceAll(",", " - ")}
   </p>
 );
 
 const Content = ({ desc }: { desc: string }) => (
-  <p className="text-copy-light font-light mt-3">
+  <p className="text-copy-light font-light mt-3 transition-all duration-300">
     {desc}{" "}
-    <button className="text-secondary font-normal inline hover:underline">
+    <button className="text-secondary font-normal inline hover:underline transition-all duration-300">
       <p className="flex items-center">
         Learn more
         <IoIosArrowForward className="inline" />

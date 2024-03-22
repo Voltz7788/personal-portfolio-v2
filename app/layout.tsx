@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navigation/Navbar";
 import TopLinks from "./components/Navigation/TopLinks";
 import ScrollTracker from "./components/Animation/ScrollTracker";
+import ThemeProvider from "./components/Providers/ThemeProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,15 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth scroll-p-28">
+    <html lang="en" className="scroll-smooth scroll-p-28 ">
       <body
-        className={`default-dark h-screen bg-foreground ${poppins.className}`}
+        className={`h-screen bg-foreground selection:bg-secondary selection:text-copy  ${poppins.className}`}
       >
-        <Navbar />
-        <ScrollTracker />
-        <TopLinks />
-
-        {children}
+        <ThemeProvider>
+          <Navbar />
+          <ScrollTracker />
+          <TopLinks />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

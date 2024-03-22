@@ -11,7 +11,7 @@ export default function Bio() {
     <div className="grid grid-cols-5 gap-7 w-full mt-10">
       <div className="text-copy-light col-span-3 flex flex-col gap-5 font-light text-lg">
         <Reveal>
-          <p>
+          <p className="transition-all duration-300">
             Hey! I&apos;m Bob, if you haven&apos;t already gathered that by now.
             I&apos;m a painter turned software engineer from Daytona, Florida. I
             specialize in the backend, primarily Node and Rust, but love
@@ -19,21 +19,21 @@ export default function Bio() {
           </p>
         </Reveal>
         <Reveal>
-          <p>
+          <p className="transition-all duration-300">
             I currently work for Google on Google Photos. I also toss in my ¢2
             with the design systems teams from time to time (once an artist,
             always an artist, amirite?).
           </p>
         </Reveal>
         <Reveal>
-          <p>
+          <p className="transition-all duration-300">
             Outside of work, I still love to paint. Any given Sunday you&apos;ll
             find me scribbling some happy clouds with my son ☁️ I even teach
             courses online if you&apos;re looking to learn!
           </p>
         </Reveal>
         <Reveal>
-          <p>
+          <p className="transition-all duration-300">
             I&apos;m passively looking for new positions where I can merge my
             love for code with my love for the canvas. If you think you&apos;ve
             got an opening that I might like, let&apos;s connect 🔗
@@ -41,7 +41,7 @@ export default function Bio() {
         </Reveal>
         <Reveal>
           <div className="flex gap-5 items-center">
-            <div className="flex gap-2 items-center text-secondary font-normal">
+            <div className="flex gap-2 items-center text-secondary font-normal transition-all duration-300">
               <p>My links</p>
               <FaArrowRight />
             </div>
@@ -52,8 +52,8 @@ export default function Bio() {
       <div className="col-span-2 w-full text-copy">
         <div>
           <Reveal width="w-full">
-            <div className="flex items-center gap-2 text-xl font-bold">
-              <IoTerminal className="text-secondary" />
+            <div className="flex items-center gap-2 text-xl font-bold transition-all duration-300">
+              <IoTerminal className="text-secondary transition-all duration-300" />
               <h4>Tech stack</h4>
             </div>
           </Reveal>
