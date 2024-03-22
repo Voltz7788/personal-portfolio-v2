@@ -8,7 +8,7 @@ import accountSiteScreenshot from "../../public/account-site-screenshot.png";
 export const projectsList: {
   title: string;
   repoURL: Url;
-  liveUrl: Url;
+  liveURL: Url;
   highlights: string[];
   desc: string;
   image: StaticImageData;
@@ -16,7 +16,7 @@ export const projectsList: {
   {
     title: "Monotaskr",
     repoURL: "https://github.com/Voltz7788/full-task-essa",
-    liveUrl: "https://www.monotaskr.com/",
+    liveURL: "https://www.monotaskr.com/",
     desc: "Lorem ipsum",
     highlights: ["Next", "Tailwind", "Pusher", "PostgreSQL"],
     image: monotaskrScreenshot,
@@ -24,7 +24,7 @@ export const projectsList: {
   {
     title: "OnlyFans (Parody)",
     repoURL: "https://github.com/Voltz7788/onlyfans-with-actual-fans",
-    liveUrl: "https://onlyfans-with-actual-fans.vercel.app/",
+    liveURL: "https://onlyfans-with-actual-fans.vercel.app/",
     desc: "Lorem ipsum",
     highlights: ["Next", "Tailwind", "Typescript", "AWS S3"],
     image: onlyFansScreenshot,
@@ -32,7 +32,7 @@ export const projectsList: {
   {
     title: "Accountant Site Remake",
     repoURL: "https://github.com/Voltz7788/accountant-site-demo",
-    liveUrl: "https://accountant-site-demo.vercel.app/",
+    liveURL: "https://accountant-site-demo.vercel.app/",
     desc: "Lorem ipsum",
     highlights: ["React", "Next", "Tailwind", "Typescript"],
     image: accountSiteScreenshot,
@@ -40,7 +40,7 @@ export const projectsList: {
   {
     title: "Calculator 2099",
     repoURL: "https://github.com/Voltz7788/calculator",
-    liveUrl: "https://voltz7788.github.io/calculator/",
+    liveURL: "https://voltz7788.github.io/calculator/",
     desc: "Lorem ipsum",
     highlights: ["HTML", "CSS", "Javascript"],
     image: calculatorScreenshot,

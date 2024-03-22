@@ -1,3 +1,6 @@
+import { Url } from "next/dist/shared/lib/router/router";
+import { StaticImageData } from "next/image";
+
 export type Exp = {
   company: string;
   yearStart: string;
@@ -6,4 +9,13 @@ export type Exp = {
   location: string;
   desc: string;
   techStack: { name: string; icon: JSX.Element }[];
+};
+
+export type ProjectProps = {
+  title: string;
+  repoURL: Url;
+  liveURL: Url;
+  highlights: string[];
+  desc: string;
+  image: StaticImageData;
 };

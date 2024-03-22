@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
@@ -7,19 +7,23 @@ import Image, { StaticImageData } from "next/image";
 import ScaleRotate from "../Animation/ScaleRotate";
 import { Url } from "next/dist/shared/lib/router/router";
 import { motion } from "framer-motion";
+import DetailedProjectCard from "./DetailedProjectCard";
 
 export default function Card({
   children,
   image,
+  setOpen,
 }: {
   children: ReactNode;
   image: StaticImageData;
+  setOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
     <div className="flex flex-col w-full transition-all duration-300">
       <motion.button
         initial={"initial"}
         whileHover={"hover"}
+        onClick={() => setOpen(true)}
         className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300"
       >
         <ScaleRotate>
@@ -68,10 +72,19 @@ const Highlights = ({ highlights }: { highlights: string[] }) => (
   </p>
 );
 
-const Content = ({ desc }: { desc: string }) => (
+const Content = ({
+  desc,
+  setOpen,
+}: {
+  desc: string;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}) => (
   <p className="text-copy-light font-light mt-3 transition-all duration-300">
     {desc}{" "}
-    <button className="text-secondary font-normal inline hover:underline transition-all duration-300">
+    <button
+      onClick={() => setOpen(true)}
+      className="text-secondary font-normal inline hover:underline transition-all duration-300"
+    >
       <p className="flex items-center">
         Learn more
         <IoIosArrowForward className="inline" />
