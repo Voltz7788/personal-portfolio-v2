@@ -16,12 +16,12 @@ export default function Card({
   image: StaticImageData;
 }) {
   return (
-    <motion.div
-      initial={"initial"}
-      whileHover={"hover"}
-      className="flex flex-col  w-full transition-all duration-300"
-    >
-      <div className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300">
+    <div className="flex flex-col w-full transition-all duration-300">
+      <motion.button
+        initial={"initial"}
+        whileHover={"hover"}
+        className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300"
+      >
         <ScaleRotate>
           <Image
             src={image}
@@ -29,9 +29,9 @@ export default function Card({
             className="w-4/5 mx-auto h-44 rounded-t-lg object-cover"
           />
         </ScaleRotate>
-      </div>
+      </motion.button>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
