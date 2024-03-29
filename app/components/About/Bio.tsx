@@ -39,8 +39,8 @@ export default function Bio() {
             got an opening that I might like, let&apos;s connect 🔗
           </p>
         </Reveal>
-        <Reveal>
-          <div className="flex gap-5 items-center">
+        <Reveal width="w-full">
+          <div className="flex items-center">
             <div className="flex gap-2 items-center text-secondary font-normal transition-all duration-300">
               <p>My links</p>
               <FaArrowRight />

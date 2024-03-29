@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <section className="py-32 md:py-40 " id="hero">
+    <section className="py-20 md:py-40 " id="hero">
       <Reveal>
         <h1 className="font-black text-6xl md:text-7xl lg:text-8xl text-copy transition-all duration-300">
           Hey, I&apos;m Yannis
