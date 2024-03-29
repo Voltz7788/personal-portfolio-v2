@@ -7,7 +7,6 @@ import Image, { StaticImageData } from "next/image";
 import ScaleRotate from "../Animation/ScaleRotate";
 import { Url } from "next/dist/shared/lib/router/router";
 import { motion } from "framer-motion";
-import DetailedProjectCard from "./DetailedProjectCard";
 
 export default function Card({
   children,
@@ -19,18 +18,18 @@ export default function Card({
   setOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
-    <div className="flex flex-col w-full transition-all duration-300">
+    <div className="flex flex-col w-full transition-all duration-300 aspect-video">
       <motion.button
         initial={"initial"}
         whileHover={"hover"}
         onClick={() => setOpen(true)}
-        className="bg-border w-full h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300"
+        className="bg-border w-full h-full max-h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300"
       >
         <ScaleRotate>
           <Image
             src={image}
             alt="Project image"
-            className="w-4/5 mx-auto h-44 rounded-t-lg object-cover"
+            className="w-4/5 aspect-video mx-auto max-h-52 rounded-t-lg object-cover"
           />
         </ScaleRotate>
       </motion.button>
