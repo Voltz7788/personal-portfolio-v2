@@ -36,7 +36,7 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
     if (selectedTheme) {
       setTheme({ ...theme, secondary: selectedTheme });
     }
-  }, []);
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
