@@ -10,20 +10,20 @@ export default function Contact() {
       id="contact"
     >
       <Reveal width="w-full">
-        <h2 className="font-black text-[5.5rem] text-copy w-full text-center transition-all duration-300">
+        <h2 className="font-black text-[3.5rem] md:text-7xl lg:text-[5.5rem] text-copy w-full text-center transition-all duration-300">
           Contact
           <span className="text-primary transition-all duration-300">.</span>
         </h2>
       </Reveal>
       <Reveal width="w-fit">
-        <p className="text-lg text-center font-light text-copy-lighter mx-auto max-w-[80%] mb-10 transition-all duration-300">
+        <p className="text-lg text-center font-light text-copy-lighter mx-auto lg:max-w-[80%] mb-10 mt-4 transition-all duration-300">
           Shoot me an email if you want to connect! You can also find me on{" "}
           <Link
             href={socials.linkedIn}
             target="_blank"
             className="text-secondary hover:underline transition-all duration-300"
           >
-            Linkedin
+            LinkedIn
           </Link>{" "}
           if that&apos;s more your speed.
         </p>
@@ -31,9 +31,9 @@ export default function Contact() {
       <Reveal width="w-fit">
         <Link
           href={"mailto: yannismadu777@gmail.com"}
-          className="text-xl text-copy hover:text-secondary transition-all duration-200"
+          className="text-lg md:text-xl text-copy hover:text-secondary transition-all duration-200"
         >
-          <MdEmail className="inline text-3xl mr-2" />
+          <MdEmail className="inline text-2xl md:text-3xl mr-2" />
           yannismadu777@gmail.com
         </Link>
       </Reveal>
