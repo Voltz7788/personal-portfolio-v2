@@ -51,9 +51,10 @@ export default function DetailedProjectCard({
             <IoClose className="text-3xl text-white" />
           </button>
 
+          {/* Detailed Card */}
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-    h-5/6 max-w-[750px] rounded-2xl w-full z-50 grid grid-rows-2 grid-cols-1"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full py-5
+            max-h-[1000px] max-w-[750px] rounded-2xl w-full z-50 grid grid-rows-2 grid-cols-1"
           >
             <motion.div
               variants={contentVariants}

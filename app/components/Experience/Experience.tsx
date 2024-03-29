@@ -4,7 +4,7 @@ import { experienceList } from "@/app/data/experienceList";
 
 export default function Experience() {
   return (
-    <section className="mt-64" id="experience">
+    <section className="mt-32 md:mt-64" id="experience">
       <SectionHeading.Root>
         <SectionHeading.Title title="Experience" />
         <SectionHeading.Divider />

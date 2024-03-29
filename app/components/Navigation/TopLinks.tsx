@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function TopLinks() {
   return (
-    <div className="fixed flex items-center justify-between w-full mx-16 pl-10 pr-24 h-20 backdrop-blur-md z-30">
+    <div className="fixed flex items-center justify-between w-full mx-14 md:mx-16 md:pl-10 pr-[4.5rem] md:pr-24 h-20 backdrop-blur-md z-30">
       <SocialLinks />
       <motion.a
         href="resume.pdf"
@@ -13,7 +13,7 @@ export default function TopLinks() {
         initial={{ scale: 1 }}
         variants={buttonMotion}
         transition={{ ease: "easeInOut", duration: 0.08 }}
-        className="relative border border-secondary px-4 py-2 rounded text-lg text-secondary 
+        className="relative border border-secondary px-3 py-2 rounded text-base md:text-lg text-secondary 
         hover:text-foreground ml-auto transition-colors duration-150 cursor-pointer"
       >
         <motion.div

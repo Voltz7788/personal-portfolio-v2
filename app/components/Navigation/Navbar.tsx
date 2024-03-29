@@ -22,7 +22,7 @@ export default function Navbar() {
       initial={{ x: "-100%" }}
       animate={{ x: "0%" }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="h-screen w-16 fixed top-0 bg-background transition-all duration-300"
+      className="h-screen md:w-16 w-14 fixed top-0 bg-background transition-all duration-300"
     >
       <div className="flex flex-col justify-between items-center h-screen transition-all duration-300">
         <div className="w-full">
@@ -30,9 +30,8 @@ export default function Navbar() {
             href={"#hero"}
             className="h-20 grid place-content-center border-r-2 border-background text-copy text-xl font-bold transition-all duration-300"
           >
-            <div className="h-12 bg-foreground w-12 rounded grid place-content-center transition-all duration-300">
+            <div className="h-11 w-11 md:h-12 md:w-12 bg-foreground rounded grid place-content-center transition-all duration-300">
               <p>
-                {" "}
                 YM
                 <span className="text-secondary transition-all duration-300">
                   .

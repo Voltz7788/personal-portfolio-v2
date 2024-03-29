@@ -21,7 +21,7 @@ export default function ToggleSwitch() {
         backgroundControls.start("inactive");
       }
     }
-  }, [checked]);
+  });
 
   return (
     <div className="mb-10">

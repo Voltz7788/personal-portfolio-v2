@@ -34,7 +34,7 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
     const selectedTheme = localStorage.getItem("theme");
 
     if (selectedTheme) {
-      setTheme({ ...theme, secondary: selectedTheme });
+      setTheme((t) => ({ ...t, secondary: selectedTheme }));
     }
   }, []);
 

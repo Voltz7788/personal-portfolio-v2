@@ -7,7 +7,7 @@ export default function ScrollTracker() {
   return (
     <motion.div
       style={{ scaleX: scrollYProgress }}
-      className={`bg-secondary fixed top-0 w-full origin-left h-0.5 mx-16 z-40`}
+      className={`bg-secondary fixed top-0 w-full origin-left h-0.5 mx-14 md:mx-16 z-40`}
     />
   );
 }
