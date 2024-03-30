@@ -23,8 +23,8 @@ export default function Bio() {
         <Reveal>
           <p className="transition-all duration-300">
             Currently, I work at Build School, where I lead the technical
-            development of our software products. Although since we&apos;re a
-            start up, I tend to wear many hats.
+            development of our software products, although I tend to wear many
+            hats since we&apos;re a start up.
           </p>
         </Reveal>
         <Reveal>
