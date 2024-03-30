@@ -36,7 +36,7 @@ export default function Bio() {
                 "https://www.tiktok.com/@yannismadu/video/7210397634941488389?lang=en"
               }
               target="_blank"
-              className="text-secondary hover:underline"
+              className="text-secondary hover:underline font-semibold"
             >
               monkey in my brain
             </Link>
@@ -44,7 +44,7 @@ export default function Bio() {
             <Link
               href={"https://youtu.be/7xoF5MGU738?si=oKa5FEpH2gU1q8TN"}
               target="_blank"
-              className="text-secondary hover:underline"
+              className="text-secondary hover:underline font-semibold"
             >
               spreadsheet tutorial
             </Link>{" "}
