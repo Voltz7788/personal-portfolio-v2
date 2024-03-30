@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth scroll-p-28">
+    <html lang="en" className="scroll-smooth scroll-p-28 overflow-x-hidden">
       <body
         className={`h-screen bg-stone-800 selection:bg-secondary selection:text-copy  ${poppins.className}`}
       >

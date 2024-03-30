@@ -42,7 +42,7 @@ export default function ExpPanel({
           {desc}
         </p>
       </Reveal>
-      <div className="flex gap-3 my-6">
+      <div className="flex flex-wrap gap-3 my-6">
         {techStack.map((tech, index) => (
           <TechPill
             key={tech.name}
