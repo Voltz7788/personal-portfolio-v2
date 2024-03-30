@@ -22,9 +22,8 @@ export default function Hero() {
       </Reveal>
       <Reveal>
         <p className="text-copy-light mt-8 md:mt-5 text-lg w-full md:text-xl font-light transition-all duration-300">
-          I&apos;ve spent the last 5 years building and scaling software for
-          some pretty cool companies. I also teach people to paint online
-          (incase you&apos;ve got an empty canvas layin&apos; around 🎨).
+          I&apos;ve spent the last year hyperfocusing on learning web
+          development, and have built some pretty cool stuff along the way 🔨.
           Let&apos;s connect!
         </p>
       </Reveal>

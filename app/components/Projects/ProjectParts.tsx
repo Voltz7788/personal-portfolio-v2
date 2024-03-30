@@ -11,18 +11,21 @@ import { motion } from "framer-motion";
 export default function Card({
   children,
   image,
+  liveUrl,
   setOpen,
 }: {
   children: ReactNode;
   image: StaticImageData;
+  liveUrl: Url;
   setOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
     <div className="flex flex-col w-full transition-all duration-300 aspect-video">
-      <motion.button
+      <motion.a
         initial={"initial"}
         whileHover={"hover"}
-        onClick={() => setOpen(true)}
+        href={liveUrl as string}
+        target="_blank"
         className="bg-border w-full h-full max-h-60 rounded-xl flex items-end overflow-hidden transition-all duration-300"
       >
         <ScaleRotate>
@@ -32,7 +35,7 @@ export default function Card({
             className="w-4/5 aspect-video mx-auto max-h-52 rounded-t-lg object-cover"
           />
         </ScaleRotate>
-      </motion.button>
+      </motion.a>
       {children}
     </div>
   );

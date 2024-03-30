@@ -20,7 +20,7 @@ export default function ProjectContainer({
   return (
     <motion.div key={title} whileHover={"hover"}>
       <SlowFadeUp index={index}>
-        <Project.Card image={image} setOpen={setOpen}>
+        <Project.Card image={image} liveUrl={liveURL} setOpen={setOpen}>
           <Project.Heading title={title} repoURL={repoURL} liveURL={liveURL} />
           <Reveal>
             <Project.Highlights highlights={highlights} />

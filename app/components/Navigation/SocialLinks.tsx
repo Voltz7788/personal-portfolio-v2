@@ -16,7 +16,7 @@ type SocialLinkProps = {
 
 export default function SocialLinks() {
   return (
-    <div className="flex justify-between max-w-36 w-full ml-7 md:ml-0 md:max-w-none md:pl-0 md:justify-evenly md:w-48 py-4">
+    <div className="flex justify-between max-w-36 w-full ml-7 lg:max-w-none lg:pl-0 lg:justify-evenly md:w-48 py-4">
       {socialLinks.map((link, index) => (
         <motion.div
           initial={{ y: "-300%", opacity: 0 }}

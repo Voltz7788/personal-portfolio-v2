@@ -13,7 +13,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Yannis Madu | Web Developer",
-  description: "Created by Yannis Madu",
+  description: "Yannis Madu website developer portfolio",
+  icons: {
+    icon: ["/ico.png"],
+  },
 };
 
 export default function RootLayout({
@@ -22,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth scroll-p-28 ">
+    <html lang="en" className="scroll-smooth scroll-p-28">
       <body
-        className={`h-screen bg-foreground selection:bg-secondary selection:text-copy  ${poppins.className}`}
+        className={`h-screen bg-stone-800 selection:bg-secondary selection:text-copy  ${poppins.className}`}
       >
         <ThemeProvider>
           <Navbar />

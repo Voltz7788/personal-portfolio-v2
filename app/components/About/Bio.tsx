@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { IoTerminal } from "react-icons/io5";
 import TechPill from "./TechPill";
 import { workTechStack } from "@/app/data/workTechStack";
+import Link from "next/link";
 
 export default function Bio() {
   return (
@@ -12,31 +13,48 @@ export default function Bio() {
       <div className="text-copy-light col-span-3 flex flex-col gap-8 md:gap-5 font-light text-lg">
         <Reveal>
           <p className="transition-all duration-300">
-            Hey! I&apos;m Bob, if you haven&apos;t already gathered that by now.
-            I&apos;m a painter turned software engineer from Daytona, Florida. I
-            specialize in the backend, primarily Node and Rust, but love
-            building with whatever tools are right for the job.
+            Hello there! I&apos;m Yannis - in case you missed the really small
+            text in the header. I&apos;m a musician turned web developer from
+            London, UK. I primarily write React apps in Next.js, but love
+            learning about new tools to use for my questionable side projects
+            👀.
           </p>
         </Reveal>
         <Reveal>
           <p className="transition-all duration-300">
-            I currently work for Google on Google Photos. I also toss in my ¢2
-            with the design systems teams from time to time (once an artist,
-            always an artist, amirite?).
+            Currently, I work at Build School, where I lead the technical
+            development of our software products. Although since we&apos;re a
+            start up, I tend to wear many hats.
           </p>
         </Reveal>
         <Reveal>
           <p className="transition-all duration-300">
-            Outside of work, I still love to paint. Any given Sunday you&apos;ll
-            find me scribbling some happy clouds with my son ☁️ I even teach
-            courses online if you&apos;re looking to learn!
+            Outside of work, I love to make videos. My greatest creation has to
+            be either the video where I likened my ADHD to having a{" "}
+            <Link
+              href={
+                "https://www.tiktok.com/@yannismadu/video/7210397634941488389?lang=en"
+              }
+              target="_blank"
+              className="text-secondary hover:underline"
+            >
+              monkey in my brain
+            </Link>
+            , or where I successfully asked a girl out on Hinge by making a{" "}
+            <Link
+              href={"https://youtu.be/7xoF5MGU738?si=oKa5FEpH2gU1q8TN"}
+              target="_blank"
+              className="text-secondary hover:underline"
+            >
+              spreadsheet tutorial
+            </Link>{" "}
+            (her irrational fear was spreadsheets apparently).
           </p>
         </Reveal>
         <Reveal>
           <p className="transition-all duration-300">
-            I&apos;m passively looking for new positions where I can merge my
-            love for code with my love for the canvas. If you think you&apos;ve
-            got an opening that I might like, let&apos;s connect 🔗
+            If you&apos;d like to connect, you can find me on LinkedIn or catch
+            my antics on Youtube and Tiktok!
           </p>
         </Reveal>
         <Reveal width="w-full">

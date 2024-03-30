@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 export default function TopLinks() {
   return (
     <div className="fixed flex items-center justify-between w-full mx-14 md:mx-16 md:pl-10 pr-[4.5rem] md:pr-24 h-20 backdrop-blur-md z-30">
-      <SocialLinks />
+      <div className="md:-ml-10">
+        <SocialLinks />
+      </div>
       <motion.a
         href="resume.pdf"
         target="_blank"
