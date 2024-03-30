@@ -15,24 +15,24 @@ export default function ExpPanel({
 }: Exp & { index: number }) {
   return (
     <div className="border-b border-border text-lg mt-8 transition-all duration-300">
-      <div className="flex justify-between ">
+      <div className="flex justify-between items-end">
         <Reveal>
           <h4 className="text-copy font-bold text-xl transition-all duration-300">
             {company}
           </h4>
         </Reveal>
         <Reveal>
-          <p className="text-copy-light transition-all duration-300">{`${yearStart} - ${yearEnd}`}</p>
+          <p className="text-copy-light text-base transition-all duration-300">{`${yearStart} - ${yearEnd}`}</p>
         </Reveal>
       </div>
-      <div className="flex justify-between mt-4 ">
+      <div className="flex justify-between items-end mt-4 ">
         <Reveal>
           <p className="text-secondary font-bold transition-all duration-300">
             {role}
           </p>
         </Reveal>
         <Reveal>
-          <p className="text-copy-light transition-all duration-300">
+          <p className="text-copy-light text-base transition-all duration-300">
             {location}
           </p>
         </Reveal>
