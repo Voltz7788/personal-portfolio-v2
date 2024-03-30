@@ -17,7 +17,7 @@ export default function Contact() {
       </Reveal>
       <Reveal width="w-fit">
         <p className="text-lg text-center font-light text-copy-lighter mx-auto lg:max-w-[80%] mb-10 mt-4 transition-all duration-300">
-          Shoot me an email if you want to connect! You can also find me on{" "}
+          Send me an email if you want to connect! You can also find me on{" "}
           <Link
             href={socials.linkedIn}
             target="_blank"
@@ -25,7 +25,7 @@ export default function Contact() {
           >
             LinkedIn
           </Link>{" "}
-          if that&apos;s more your speed.
+          if that&apos;s more your vibe.
         </p>
       </Reveal>
       <Reveal width="w-fit">
