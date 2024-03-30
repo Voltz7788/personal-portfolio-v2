@@ -83,7 +83,7 @@ const Content = ({
 }) => (
   <p className="text-copy-light font-light mt-3 transition-all duration-300">
     {descShort}{" "}
-    <button
+    {/* <button
       onClick={() => setOpen(true)}
       className="text-secondary font-normal inline hover:underline transition-all duration-300"
     >
@@ -91,7 +91,7 @@ const Content = ({
         Learn more
         <IoIosArrowForward className="inline" />
       </p>
-    </button>
+    </button> */}
   </p>
 );
 
