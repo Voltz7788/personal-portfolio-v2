@@ -56,20 +56,20 @@ export const experienceList: {
       { name: "Git", icon: GitIcon() },
     ],
   },
-  {
-    company: "Vortex Labs",
-    yearStart: "2023",
-    yearEnd: "2023",
-    role: "Web Developer",
-    desc: "I worked alongside Vortex labs as elastic dev capacity on their main website. I primarily worked on the frontend with React and Tailwind and contributed to the remote repository with Git.",
-    location: "London",
-    techStack: [
-      { name: "Javascript", icon: JSIcon() },
-      { name: "React", icon: ReactIcon() },
-      { name: "Next", icon: NextIcon() },
-      { name: "Tailwind", icon: TailwindIcon() },
+  // {
+  //   company: "Vortex Labs",
+  //   yearStart: "2023",
+  //   yearEnd: "2023",
+  //   role: "Web Developer",
+  //   desc: "I worked alongside Vortex labs as elastic dev capacity on their main website. I primarily worked on the frontend with React and Tailwind and contributed to the remote repository with Git.",
+  //   location: "London",
+  //   techStack: [
+  //     { name: "Javascript", icon: JSIcon() },
+  //     { name: "React", icon: ReactIcon() },
+  //     { name: "Next", icon: NextIcon() },
+  //     { name: "Tailwind", icon: TailwindIcon() },
 
-      { name: "Git", icon: GitIcon() },
-    ],
-  },
+  //     { name: "Git", icon: GitIcon() },
+  //   ],
+  // },
 ];
