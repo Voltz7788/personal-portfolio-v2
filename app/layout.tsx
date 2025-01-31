@@ -29,12 +29,7 @@ export default function RootLayout({
       <body
         className={`h-screen bg-stone-800 selection:bg-secondary selection:text-copy  ${poppins.className}`}
       >
-        <ThemeProvider>
-          <Navbar />
-          <ScrollTracker />
-          <TopLinks />
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
