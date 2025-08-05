@@ -22,10 +22,10 @@ export default function Hero() {
       </Reveal>
       <Reveal>
         <p className="text-copy-light mt-8 md:mt-5 text-lg w-full md:text-xl font-light transition-all duration-300">
-          I love building things that people actually use. I've launched a SaaS
-          that grew from zero to real paying customers, and shipped everything
-          from React Native apps to complex backend systems. Ready for the next
-          challenge! 🚀
+          I love building things that people actually use. I&apos;ve launched a
+          SaaS that grew from zero to real paying customers, and shipped
+          everything from React Native apps to complex backend systems. Ready
+          for the next challenge! 🚀
         </p>
       </Reveal>
       <Reveal>

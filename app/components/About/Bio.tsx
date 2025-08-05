@@ -16,9 +16,9 @@ export default function Bio() {
             Hello there! I&apos;m Yannis - in case you missed the really small
             text in the header. I&apos;m a full-stack engineer from London, UK.
             I specialize in modern web development with React and Node.js, but
-            I'm equally comfortable diving into infrastructure, databases, and
-            APIs. Always experimenting with new tech for my silly side projects
-            😌.
+            I&apos;m equally comfortable diving into infrastructure, databases,
+            and APIs. Always experimenting with new tech for my silly side
+            projects 😌.
           </p>
         </Reveal>
         <Reveal>
@@ -32,8 +32,8 @@ export default function Bio() {
               Build Board
             </Link>
             , where I led the technical development of our software products and
-            wore many hats as you do at startups. Now I'm looking for my next
-            challenge!
+            wore many hats as you do at startups. Now I&apos;m looking for my
+            next challenge!
           </p>
         </Reveal>
         <Reveal>
