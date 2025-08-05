@@ -6,9 +6,8 @@ import Fireworks from "react-canvas-confetti/dist/presets/fireworks";
 import Meme1 from "@/public/meme-1.jpg";
 import Meme2 from "@/public/meme-2.jpg";
 import AudioPlayer from "../components/AudioPlayer";
-import Howl from "react-howler";
 
-export default function page() {
+export default function JessicaPage() {
   return (
     <div className="h-max bg-white py-20">
       <h1 className="text-5xl text-center font-semibold">

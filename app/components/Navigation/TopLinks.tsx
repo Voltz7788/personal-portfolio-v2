@@ -9,7 +9,7 @@ export default function TopLinks() {
         <SocialLinks />
       </div>
       <motion.a
-        href="resume.pdf"
+        href="yannis-madu-cv.pdf"
         target="_blank"
         whileHover={"hover"}
         initial={{ scale: 1 }}
@@ -24,7 +24,7 @@ export default function TopLinks() {
           transition={{ ease: "easeInOut", duration: 0.15 }}
           className="-z-10 absolute top-0 left-0 w-full h-full origin-top-left bg-secondary"
         />
-        My resume
+        My CV
       </motion.a>
     </div>
   );

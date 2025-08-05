@@ -14,17 +14,26 @@ export default function Bio() {
         <Reveal>
           <p className="transition-all duration-300">
             Hello there! I&apos;m Yannis - in case you missed the really small
-            text in the header. I&apos;m a musician turned web developer from
-            London, UK. I primarily write React apps in Next.js, but love
-            learning about new tools to use for my questionable side projects
-            👀.
+            text in the header. I&apos;m a full-stack engineer from London, UK.
+            I specialize in modern web development with React and Node.js, but
+            I'm equally comfortable diving into infrastructure, databases, and
+            APIs. Always experimenting with new tech for my silly side projects
+            😌.
           </p>
         </Reveal>
         <Reveal>
           <p className="transition-all duration-300">
-            Currently, I work at Build School, where I lead the technical
-            development of our software products, although I tend to wear many
-            hats since we&apos;re a start up.
+            Most recently, I was the founding engineer at{" "}
+            <Link
+              href={"https://www.build-board.io"}
+              target="_blank"
+              className="text-secondary hover:underline font-semibold"
+            >
+              Build Board
+            </Link>
+            , where I led the technical development of our software products and
+            wore many hats as you do at startups. Now I'm looking for my next
+            challenge!
           </p>
         </Reveal>
         <Reveal>
@@ -33,7 +42,7 @@ export default function Bio() {
             be either the video where I likened my ADHD to having a{" "}
             <Link
               href={
-                "https://www.tiktok.com/@yannismadu/video/7210397634941488389?lang=en"
+                "https://www.tiktok.com/@yannismadu/video/7211216289900072197"
               }
               target="_blank"
               className="text-secondary hover:underline font-semibold"
@@ -42,7 +51,7 @@ export default function Bio() {
             </Link>
             , or where I successfully asked a girl out on Hinge by making a{" "}
             <Link
-              href={"https://youtu.be/7xoF5MGU738?si=oKa5FEpH2gU1q8TN"}
+              href={"https://youtu.be/7xoF5MGU738"}
               target="_blank"
               className="text-secondary hover:underline font-semibold"
             >

@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Howl from "react-howler";
 
-export default function JessicaPage() {
+export default function AudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const togglePlay = () => {
