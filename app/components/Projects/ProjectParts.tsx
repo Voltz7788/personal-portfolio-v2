@@ -16,7 +16,7 @@ export default function Card({
 }: {
   children: ReactNode;
   image: StaticImageData;
-  liveUrl: Url;
+  liveUrl?: Url;
   setOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
@@ -47,8 +47,8 @@ const Heading = ({
   liveURL,
 }: {
   title: string;
-  repoURL: Url;
-  liveURL: Url;
+  repoURL?: Url;
+  liveURL?: Url;
 }) => (
   <div className="flex items-center gap-3 mt-4 transition-all duration-300">
     <h4 className="text-2xl text-copy font-bold transition-all duration-300">
@@ -57,14 +57,18 @@ const Heading = ({
     <div className="h-0.5 border-t border-copy-lighter grow transition-all duration-300" />
 
     {/* Repository Link */}
-    <Link href={repoURL} target="_blank">
-      <FaGithub className="text-[27px] text-copy-lighter hover:text-copy transition-all duration-300" />
-    </Link>
+    {!!repoURL && (
+      <Link href={repoURL} target="_blank">
+        <FaGithub className="text-[27px] text-copy-lighter hover:text-copy transition-all duration-300" />
+      </Link>
+    )}
 
     {/* Live Link */}
-    <Link href={liveURL} target="_blank">
-      <BiLinkExternal className="text-[27px] text-copy-lighter hover:text-copy transition-all duration-300" />
-    </Link>
+    {!!liveURL && (
+      <Link href={liveURL} target="_blank">
+        <BiLinkExternal className="text-[27px] text-copy-lighter hover:text-copy transition-all duration-300" />
+      </Link>
+    )}
   </div>
 );
 

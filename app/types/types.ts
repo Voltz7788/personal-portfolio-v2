@@ -13,8 +13,8 @@ export type Exp = {
 
 export type ProjectProps = {
   title: string;
-  repoURL: Url;
-  liveURL: Url;
+  repoURL?: Url;
+  liveURL?: Url;
   highlights: string[];
   descShort: string;
   descFull: string;

@@ -90,22 +90,26 @@ export default function DetailedProjectCard({
                     </span>
                   </h6>
                   <div className="flex gap-5 mt-2">
-                    <Link
-                      href={repoURL}
-                      target="_blank"
-                      className="text-secondary transition-all duration-300 flex items-center gap-1"
-                    >
-                      <FaGithub className="text-xl text-secondary transition-all duration-300" />
-                      <p className="hover:underline">source code</p>
-                    </Link>
-                    <Link
-                      href={liveURL}
-                      target="_blank"
-                      className="text-secondary transition-all duration-300 flex items-center gap-1"
-                    >
-                      <BiLinkExternal className="text-xl text-secondary transition-all duration-300" />
-                      <p className="hover:underline">live project</p>
-                    </Link>
+                    {!!repoURL && (
+                      <Link
+                        href={repoURL}
+                        target="_blank"
+                        className="text-secondary transition-all duration-300 flex items-center gap-1"
+                      >
+                        <FaGithub className="text-xl text-secondary transition-all duration-300" />
+                        <p className="hover:underline">source code</p>
+                      </Link>
+                    )}
+                    {!!liveURL && (
+                      <Link
+                        href={liveURL}
+                        target="_blank"
+                        className="text-secondary transition-all duration-300 flex items-center gap-1"
+                      >
+                        <BiLinkExternal className="text-xl text-secondary transition-all duration-300" />
+                        <p className="hover:underline">live project</p>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
