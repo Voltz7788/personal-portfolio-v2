@@ -47,7 +47,7 @@ export const experienceList: {
     yearStart: "Oct 2024",
     yearEnd: "Feb 2025",
     role: "Frontend Engineer (Contract)",
-    desc: "Delivered a React Native geospatial data collection app with offline functionality, interactive mapping, and real-time coordinate conversion. Built a high-performance freehand drawing system using React Native Skia and completed the project 1 month ahead of schedule.",
+    desc: "Delivered a React Native geospatial data collection app with offline-first functionality, interactive mapping, and data visualization. Built a high-performance freehand drawing system using React Native Skia and completed the project 1 month ahead of schedule.",
     location: "Remote, UK",
     techStack: [
       { name: "React Native", icon: ReactIcon() },
