@@ -27,6 +27,22 @@ export const experienceList: {
   techStack: { name: string; icon: JSX.Element }[];
 }[] = [
   {
+    company: "Build Board",
+    yearStart: "Feb 2024",
+    yearEnd: "Aug 2025",
+    role: "Founding Full-Stack Engineer",
+    desc: "Spearheaded Build Board from concept to launch as the solo engineer. Built a kanban-based project management tool for 3D printing hobbyists, handling frontend, backend, DevOps, and database systems. Cut image storage costs by 50% and developed a queue-based asynchronous project import system.",
+    location: "London, UK",
+    techStack: [
+      { name: "TypeScript", icon: TSIcon() },
+      { name: "React", icon: ReactIcon() },
+      { name: "Next.js", icon: NextIcon() },
+      { name: "Node.js", icon: NodeIcon() },
+      { name: "PostgreSQL", icon: PostgresIcon() },
+      { name: "Amazon Web Services", icon: AWSIcon() },
+    ],
+  },
+  {
     company: "Omanos Analytics",
     yearStart: "Oct 2024",
     yearEnd: "Feb 2025",
@@ -35,41 +51,7 @@ export const experienceList: {
     location: "Remote, UK",
     techStack: [
       { name: "React Native", icon: ReactIcon() },
-      { name: "Typescript", icon: TSIcon() },
-      { name: "SQLite", icon: PostgresIcon() },
-      { name: "Expo", icon: ExpressIcon() },
+      { name: "TypeScript", icon: TSIcon() },
     ],
   },
-  {
-    company: "Build Board",
-    yearStart: "Feb 2024",
-    yearEnd: "Present",
-    role: "Founding Full-Stack Engineer",
-    desc: "Spearheaded Build Board from concept to launch as the solo engineer. Built a kanban-based project management tool for 3D printing hobbyists, handling frontend, backend, DevOps, and database systems. Cut image storage costs by 50% and developed a queue-based asynchronous web scraping system.",
-    location: "Remote, UK",
-    techStack: [
-      { name: "Typescript", icon: TSIcon() },
-      { name: "React", icon: ReactIcon() },
-      { name: "Next", icon: NextIcon() },
-      { name: "Node.js", icon: NodeIcon() },
-      { name: "Postgres", icon: PostgresIcon() },
-      { name: "AWS", icon: AWSIcon() },
-    ],
-  },
-  // {
-  //   company: "Vortex Labs",
-  //   yearStart: "2023",
-  //   yearEnd: "2023",
-  //   role: "Web Developer",
-  //   desc: "I worked alongside Vortex labs as elastic dev capacity on their main website. I primarily worked on the frontend with React and Tailwind and contributed to the remote repository with Git.",
-  //   location: "London",
-  //   techStack: [
-  //     { name: "Javascript", icon: JSIcon() },
-  //     { name: "React", icon: ReactIcon() },
-  //     { name: "Next", icon: NextIcon() },
-  //     { name: "Tailwind", icon: TailwindIcon() },
-
-  //     { name: "Git", icon: GitIcon() },
-  //   ],
-  // },
 ];

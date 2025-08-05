@@ -22,7 +22,7 @@ export const projectsList: {
     title: "Build Board",
     liveURL: "https://www.build-board.io",
     descShort:
-      "A kanban-based project management tool for 3D printing hobbyists.",
+      "SaaS 3D printing project management tool I built from zero to paying customers, featuring authentication, Stripe payments, and cost-optimized cloud infrastructure.",
     descFull: "Lorem ipsum",
     highlights: ["React", "Next.js", "Node.js", "Stripe", "AWS", "Firebase"],
     image: buildBoardScreenshot,
@@ -30,9 +30,9 @@ export const projectsList: {
   {
     title: "QuickBeam",
     descShort:
-      "A geospatial data collection app, enabling offline field research with an interactive map, survey workflows, and automatic data synchronization",
+      "A geospatial data collection app, with offline-first architecture, automatic data synchronization, and custom drawing system using React Native Skia.",
     descFull: "Lorem ipsum",
-    highlights: ["React Native", "Maplibre", "GeoJSON", "RN Skia"],
+    highlights: ["React Native", "Maplibre", "GeoJSON", "Skia"],
     image: quickbeamScreenshot,
   },
   {
