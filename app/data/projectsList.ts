@@ -45,7 +45,6 @@ export const projectsList: {
   },
   {
     title: "Monotaskr",
-    repoURL: "https://github.com/Voltz7788/full-task-essa",
     liveURL: "https://www.monotaskr.com/",
     descShort:
       "A real-time to-do app that encourages you to only focus on one task at a time.",
@@ -55,8 +54,8 @@ export const projectsList: {
   },
   {
     title: "Calculator 2099",
-    repoURL: "https://github.com/Voltz7788/calculator",
-    liveURL: "https://voltz7788.github.io/calculator/",
+    repoURL: "https://github.com/yannismadu/calculator",
+    liveURL: "https://yannismadu.github.io/calculator/",
     descShort:
       "A simple calculator app…or is it? Put in “2099” and see what happens 🕷️",
     descFull: "Lorem ipsum",
