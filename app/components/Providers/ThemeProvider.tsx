@@ -20,14 +20,14 @@ type ThemeContextType = [
 ];
 
 export const ThemeContext = createContext<ThemeContextType>([
-  { dark: true, secondary: "default" },
+  { dark: true, secondary: "cookiesAndCream" },
   null,
 ]);
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState({
     dark: true,
-    secondary: "default",
+    secondary: "cookiesAndCream",
   });
 
   useEffect(() => {
